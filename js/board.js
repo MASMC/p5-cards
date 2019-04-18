@@ -21,5 +21,28 @@ function Board() {
 					["queen", 10],
 					["king", 10]];
 
-	this.lol;
+	this.deck = new Deck(suits, values);
+
+	// Board update
+	this.update = function() {
+
+	}
+
+	// Board draw
+	this.show = function() {
+
+	}
+
+	// Shuffle dekc associated with this board
+	this.shuffle = function() {
+		deck.shuffle();
+	}
+
+	this.getCardH = function() {
+		return cH;
+	}
+
+	this.getCardW = function() {
+		return cW;
+	}
 }

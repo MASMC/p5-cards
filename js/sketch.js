@@ -3,11 +3,12 @@
 // Main file for the page
 
 // Create the board
-let board = new Board(new Cards("default"));
+let board = new Board();
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(0);
+	board.shuffle();
 }
 
 function draw() {
